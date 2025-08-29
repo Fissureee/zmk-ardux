@@ -41,8 +41,8 @@
 		input-gpios
 		=   <&pro_micro_d 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 			, <&pro_micro_d 5  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-			, <&pro_micro_d 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-			, <&pro_micro_d 8  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // Skip D7 since it's dead
+			, <&pro_micro_d 7  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // Skip D6 since it's dead
+			, <&pro_micro_d 8  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> 
 			, <&pro_micro_a 1  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 			, <&pro_micro_a 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 			, <&pro_micro_d 15  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
