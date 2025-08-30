@@ -38,15 +38,28 @@
 
 		label = "KSCAN";
 
+		// input-gpios
+		// =   <&pro_micro_d 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+		// 	, <&pro_micro_d 5  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+		// 	, <&pro_micro_d 8  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // Skip D6 and D7 since it's dead
+		// 	, <&pro_micro_d 9  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> 
+			
+		// 	, <&pro_micro_a 1  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+		// 	, <&pro_micro_a 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+		// 	, <&pro_micro_d 15  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+		// 	, <&pro_micro_d 14  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+		// 	;
+
 		input-gpios
-		=   <&pro_micro_d 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-			, <&pro_micro_d 5  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-			, <&pro_micro_d 8  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // Skip D6 and D7 since it's dead
-			, <&pro_micro_d 9  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> 
-			, <&pro_micro_a 1  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-			, <&pro_micro_a 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-			, <&pro_micro_d 15  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-			, <&pro_micro_d 14  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+		=   <&pro_micro_d 9  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> //reversed cause i wired it wrong
+			, <&pro_micro_d 8  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			, <&pro_micro_d 5  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  
+			, <&pro_micro_d 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> 
+			
+			, <&pro_micro_a 14  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			, <&pro_micro_a 15  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			, <&pro_micro_d 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			, <&pro_micro_d 1  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 			;
 	};
 };
