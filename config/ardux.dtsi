@@ -599,11 +599,18 @@
 		bt {
 			display-name = "BT";
 			bindings = <
+				//LEADING_NONES
+				//ARDUX_BT_TOP    &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
+				//MIDDLE_NONES
+				//ARDUX_BT_BOTTOM &bt BT_SEL 5 &bt BT_SEL 4 &bt BT_SEL 3
+				//TRAILING_NONES
+
 				LEADING_NONES
-				ARDUX_BT_TOP    &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
+				&kp LSHIFT    &kp Q 	&kp W 	&kp E
 				MIDDLE_NONES
-				ARDUX_BT_BOTTOM &bt BT_SEL 5 &bt BT_SEL 4 &bt BT_SEL 3
+				&kp LCTRL	  &kp A 	&kp S 	&kp D
 				TRAILING_NONES
+
 			>;
 		};
 		#endif
