@@ -606,7 +606,7 @@
 				//TRAILING_NONES
 
 				LEADING_NONES
-				&kp LSHIFT    &kp Q 	&kp W 	&kp E
+				&kp LSHIFT    &kp TAB 	&kp W 	&kp R
 				MIDDLE_NONES
 				&kp LCTRL	  &kp A 	&kp S 	&kp D
 				TRAILING_NONES
