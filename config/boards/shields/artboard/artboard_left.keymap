@@ -33,9 +33,9 @@
 			display-name = "Custom";                                    \
 			bindings = <                                                \
 				LEADING_NONES                                           \
-				&kp C_PREV          &kp C_VOL_UP  &kp C_PP   &kp C_MUTE \
+				&kp C_MUTE          &kp C_VOL_UP  &kp C_PP   &kp C_NEXT \
 				MIDDLE_NONES                                            \
-				&mo LAYER_ID_CUSTOM &kp C_VOL_DN  &kp PSCRN  &kp C_NEXT \
+				&mo LAYER_ID_CUSTOM &kp C_VOL_DN  &kp PSCRN  &kp C_PREV \
 				TRAILING_NONES                                          \
 			>;                                                          \
 		};
